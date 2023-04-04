@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 460px 1200px 100px;
+            grid-template-areas:
+                "sidebar header header header"
+                "sidebar main main main"
+                "sidebar rodape rodape rodape"
+            ;
+            width: 100%;
+        }
+
+        header {
+            grid-area: header;
+            background-color: aqua;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+</body>
+
+</html>
